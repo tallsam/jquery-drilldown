@@ -63,7 +63,7 @@
       };
 
       this.$container = this.$element.find('.' + this.options.cssClass.container);
-      this.$element.on(this.options.event, this.options.selector, function (e) {
+      this.$element.delegate(this.options.selector, this.options.event, function (e) {
         self.handleAction.call(self, e, $(this));
       });
     },
