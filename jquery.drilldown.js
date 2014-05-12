@@ -86,7 +86,7 @@
         preventDefault = false;
       }
 
-      if (preventDefault && $trigger.prop('tagName') === 'A') {
+      if (preventDefault && $trigger.attr('tagName') === 'A') {
         e.preventDefault();
       }
     },
